@@ -1,0 +1,49 @@
+name: "Bug report"
+description: "Report a bug or crash in Smart Inspection Pack"
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Reproducible information is most important.
+        **Do NOT upload 3D files** — paste the auto-copied report instead.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly
+    validations:
+      required: true
+
+  - type: textarea
+    id: report
+    attributes:
+      label: Auto-copied report
+      description: Paste the report that was copied to your clipboard when you clicked the bug report button
+      render: text
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this?
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Safari
+        - Other
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, console errors, etc.
